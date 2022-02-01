@@ -1,12 +1,12 @@
 import React from "react";
 import "./Search.css";
 
-class Search extends React.Component{
-    
+class Search extends React.Component{    
 state={
     search:"",
     type:"all"
 }
+
 handlerKey =(e)=>{
     if(e.key==="Enter"){
         this.props.searchMovies(this.state.search,this.state.type);
